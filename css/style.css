@@ -1,0 +1,101 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f1923;
+    color: #fff;
+}
+
+/* Хедер */
+.header {
+    background: #0f1923;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00a8ff;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    color: #00a8ff;
+}
+
+/* Hero-секция */
+.hero {
+    background: linear-gradient(135deg, #0f1923, #1e3a5f);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Карточки товаров */
+.products {
+    padding: 2rem;
+}
+.product-card {
+    background: #1a2a3a;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.image-placeholder {
+    background: #2a3a4a;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Кнопка "Наверх" */
+.scroll-up {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #00a8ff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.scroll-up.visible {
+    opacity: 1;
+}
+
+/* Футер */
+.footer {
+    background: #0a121a;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

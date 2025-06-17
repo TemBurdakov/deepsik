@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePlay – магазин игровой техники</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header sticky">
+        <div class="logo">GamePlay</div>
+        <nav class="nav">
+            <a href="#consoles">Консоли</a>
+            <a href="#gamepads">Геймпады</a>
+            <a href="#phones">Телефоны</a>
+            <a href="#vr">VR-очки</a>
+            <a href="#macbook">MacBook</a>
+            <a href="#portables">Портативные приставки</a>
+            <a href="#accounts">Аккаунты</a>
+        </nav>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero">
+        <h1>GamePlay — ваш магазин игровой техники</h1>
+        <p>Консоли, геймпады, телефоны, VR, MacBook и многое другое</p>
+    </section>
+
+    <!-- Карусель товаров (пример для консолей) -->
+    <section id="consoles" class="products">
+        <h2>Консоли</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="image-placeholder">Фото</div>
+                        <h3>PlayStation 5 Pro</h3>
+                        <p>от 59 999 ₽</p>
+                    </div>
+                </div>
+                <!-- Остальные слайды -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="about">
+        <h2>О компании</h2>
+        <p>GamePlay — это современный магазин игровой техники. Мы предлагаем оригинальные устройства с гарантией, широкий ассортимент и быструю доставку по всей России.</p>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="feedback">
+        <h2>Оставить заявку</h2>
+        <form id="feedback-form">
+            <input type="text" placeholder="Имя*" required>
+            <input type="tel" placeholder="Телефон*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Комментарий"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-up">↑</button>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>© 2025 GamePlay. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключаем Swiper JS и наш script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
